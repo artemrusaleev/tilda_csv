@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    <title>Dish list.csv</title>
+    <style>
+      *{
+        font-family: "Proxima Nova", sans-serif;
+      }
+      header{
+        height: 60px;
+        background: #f96952;
+      }
+      h1{
+        color:#7f7f7f;
+      }
+      .btn{
+        background: #2ecc71;
+        color:#ffffff;
+        margin-top: 20px;
+      }
+      .btn:hover{
+        background:#29b765;
+        color:#ffffff;
+      }
+    </style>
+
+  </head>
+  <body>
+    <header class='bg-red'>
+      <div class="container h-100 d-flex align-items-center w-100 justify-content-between">
+      <a  class="logo m-lg-5  d-block" href="#"><img src="/smartomato-logo.png" width="44px" height="44px"></a>
+    </div>
+   </header>
+    <div class="container">
+      <div class="row mx-auto">
+        <h1 class="my-5 mx-auto text-center text-uppercase w-100">list of dishes for tilda</h1>
+        <div class="w-50 m-auto mt-lg-4">
+          <div class="form-group">
+            <input type="text" class="form-control" id="orgId" aria-describedby="orgIdHelp" placeholder="Enter organization id">
+          </div>
+          <button type="submit" class="btn">Submit</button>
+        </div>
+    </div>
+    </div>
+    <div class="target container position-absolute w-25 bottom-0 end"></div>
+    <script  src="src/js/app.js"></script>
+  </body>
+</html>
